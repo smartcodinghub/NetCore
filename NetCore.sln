@@ -7,6 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore", "NetCore\NetCore.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.Data", "NetCore.Data\NetCore.Data.csproj", "{AD7989C4-718F-481F-8E64-8C69BC6F1CDE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{61586088-3775-4BC6-8EB7-F7B24E5CA313}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.Domain", "NetCore.Domain\NetCore.Domain.csproj", "{C772FF75-1CE2-41CF-B6AA-58CC9F10CBBD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +28,10 @@ Global
 		{AD7989C4-718F-481F-8E64-8C69BC6F1CDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD7989C4-718F-481F-8E64-8C69BC6F1CDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD7989C4-718F-481F-8E64-8C69BC6F1CDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C772FF75-1CE2-41CF-B6AA-58CC9F10CBBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C772FF75-1CE2-41CF-B6AA-58CC9F10CBBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C772FF75-1CE2-41CF-B6AA-58CC9F10CBBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C772FF75-1CE2-41CF-B6AA-58CC9F10CBBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

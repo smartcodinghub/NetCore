@@ -10,6 +10,8 @@
 * Builder
 * Servicios
 * Servicios y configuraciones custom.
+* Perfiles
+* AppSettings
 
 # 3. AspNet Core
 

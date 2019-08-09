@@ -32,11 +32,14 @@ namespace NetCore
                 .AddNewtonsoftJson();
 
             services.ConfigureSwagger();
+            services.ConfigureAppSettings(Configuration);
         }
 
         public void Configure(IApplicationBuilder app)
         {
-            if (this.Environment.IsDevelopment()) app.AddSwaggerPipeline();
+            InfrastructureConfiguration infraConfig = app.ApplicationServices
+                .GetService<IOptions<InfrastructureConfiguration>>().Value;
+            if (infraConfig.FeatureFlags.UseSwagger) app.AddSwaggerPipeline();
 
             app.UseRouting();
             app.UseEndpoints(endpoints => endpoints.MapDefaultControllerRoute());

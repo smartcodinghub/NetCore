@@ -24,5 +24,13 @@ namespace NetCore.Core
 
             return services;
         }
+
+        public static IServiceCollection ConfigureAppSettings(this IServiceCollection services, IConfiguration config)
+        {
+            services.Configure<InfrastructureConfiguration>(config.GetSection(nameof(InfrastructureConfiguration)));
+
+            return services;
+        }
+
     }
 }
